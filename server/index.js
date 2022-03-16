@@ -6,6 +6,6 @@ app.get("/", (req, res) => {
   res.send("Sup?!?");
 });
 
-app.listen(port, () => {
-  console.log(`We are listening on radio ${port}`);
+app.listen(process.env.PORT || port, () => {
+  console.log(`We are listening to radio ${port}`);
 });
